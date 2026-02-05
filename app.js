@@ -201,7 +201,7 @@ const SkillDetail = ({ skill, onBack }) => {
     const [showTipModal, setShowTipModal] = useState(false);
 
     const handleTip = async () => {
-        const audio = new Audio('tip_sound.mp3');
+        const audio = new Audio('/tip_sound.mp3');
         audio.volume = 0.5;
         audio.play().catch(() => {});
         
