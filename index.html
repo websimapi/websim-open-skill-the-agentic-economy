@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Skill | The Agentic Economy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-blue': '#00f3ff',
+                        'neon-green': '#00ff9d',
+                        'neon-purple': '#b026ff',
+                        'dark-bg': '#0a0a0f',
+                        'panel-bg': '#13131f',
+                        'border-color': '#2a2a35'
+                    },
+                    fontFamily: {
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "react": "https://esm.sh/react@18.2.0",
+            "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+            "marked": "https://esm.sh/marked@12.0.0",
+            "dompurify": "https://esm.sh/dompurify@3.0.9",
+            "framer-motion": "https://esm.sh/framer-motion@10.16.4",
+            "lucide-react": "https://esm.sh/lucide-react@0.330.0"
+        }
+    }
+    </script>
+    <script type="module" src="./app.js"></script>
+    <style>
+        body {
+            background-color: #050508;
+            color: #e0e0e0;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0f;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2a2a35;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00f3ff;
+        }
+
+        .neon-glow {
+            box-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+        }
+        
+        .neon-text {
+            text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+        }
+
+        .focus-meter-bg {
+            background: conic-gradient(from 0deg, #00f3ff 0%, #00ff9d 50%, #b026ff 100%);
+            filter: blur(20px);
+            opacity: 0.2;
+        }
+
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 0.4; }
+        }
+        
+        .animate-pulse-slow {
+            animation: pulse-slow 3s infinite;
+        }
+
+        .markdown-body h1 { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; color: #fff; }
+        .markdown-body h2 { font-size: 1.25rem; font-weight: bold; margin-bottom: 0.75rem; margin-top: 1.5rem; color: #e0e0e0; }
+        .markdown-body p { margin-bottom: 1rem; line-height: 1.6; }
+        .markdown-body code { background: #1a1a25; padding: 0.2rem 0.4rem; border-radius: 4px; color: #00ff9d; font-family: 'JetBrains Mono', monospace; }
+        .markdown-body pre { background: #13131f; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1rem; border: 1px solid #2a2a35; }
+        .markdown-body ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; }
+        .markdown-body blockquote { border-left: 4px solid #00f3ff; padding-left: 1rem; color: #a0a0b0; font-style: italic; }
+
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
